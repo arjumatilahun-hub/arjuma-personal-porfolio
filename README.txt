@@ -20,3 +20,26 @@ BEFORE SUBMISSION
 - Validate both pages at https://validator.w3.org/.
 - Keep both HTML files and the images folder together when uploading.
 - Confirm the GitHub team repository is public and accessible.
+
+PERSONAL PORTFOLIO WEBSITE
+
+Developer: Arjuma Tilahun Jalata
+University: Addis Ababa Science and Technology University
+Department: Software Engineering
+Year: Third Year
+
+PROJECT DESCRIPTION:
+This personal portfolio website presents my academic background,
+technical skills, personal interests, career goals, and software
+development projects.
+
+TECHNOLOGIES:
+- HTML5
+
+PROJECT PAGES:
+- index.html: Main portfolio page
+- projects.html: Projects and project information
+
+PURPOSE:
+The purpose of this project is to introduce myself professionally
+and demonstrate my knowledge of HTML and web development.
