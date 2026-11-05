@@ -2,29 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Arjuma Tilahun Jalata, a Software Engineering student at Addis Ababa Science and Technology University.">
+    <meta name="keywords" content="Arjuma Tilahun Jalata, Software Engineering, AASTU, portfolio, web development, programming">
+    <meta name="author" content="Arjuma Tilahun Jalata">
+
     <title>Arjuma Tilahun Jalata | Portfolio</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body id="top">
-    <h1>Arjuma Tilahun Jalata</h1>
-    <img src="images/profile.jpg" alt="Portrait of Arjuma Tilahun Jalata" title="Arjuma Tilahun Jalata" width="200" height="200">
-    <p>Third-year Software Engineering student at Addis Ababa Science and Technology University, aspiring to become a Full-Stack Developer and Software Engineer.</p>
+
+    <header>
+         <canvas id="logo" width="120" height="120">
+    Arjuma Tilahun Jalata logo
+</canvas>
+        <h1>Arjuma Tilahun Jalata</h1>
+
+        <img src="images/profile.jpg"
+             alt="Portrait of Arjuma Tilahun Jalata"
+             title="Arjuma Tilahun Jalata"
+             width="200" height="200">
+
+        <p>Third-year Software Engineering student at Addis Ababa Science and Technology University, aspiring to become a Full-Stack Developer and Software Engineer.</p>
+<button type="button"
+        onclick="document.getElementById('hireDialog').showModal()">
+    Hire me
+</button>
+
+<dialog id="hireDialog">
+
+    <h2>Internship and Project Opportunities</h2>
 
     <p>
-        <a href="#about">About</a> |
-        <a href="#inspiration">Inspiration</a> |
-        <a href="#skills">Skills</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#education">Education</a> |
-        <a href="#contact">Contact</a> |
-        <a href="projects.html">All Projects</a>
+        I am interested in internship opportunities and
+        suitable freelance web projects.
     </p>
 
-    <h2 id="about">About Me</h2>
+    <p>
+        <a href="#contact">Send me a message</a>
+        or
+        <a href="files/cv.pdf" download>Download my <abbr title="Curriculum Vitae">CV</abbr></a>.
+    </p>
+
+    <button type="button"
+            onclick="document.getElementById('hireDialog').close()">
+        Close
+    </button>
+
+</dialog>
+
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#inspiration">Inspiration</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#education">Education</a> |
+            <a href="#contact">Contact</a> |
+            <a href="projects.html">All Projects</a>
+        </nav>
+
+    </header>
+
+    <main>
+    <section id="about">
+        <h2>About Me</h2>
     <p>I am a third-year <strong>Software Engineering</strong> student at
-    <strong>Addis Ababa Science and Technology University (AASTU)</strong>.
+   <strong>Addis Ababa Science and Technology University
+(<abbr title="Addis Ababa Science and Technology University">AASTU</abbr>)</strong>
     I am interested in programming, technology and creating software solutions
-    that solve real problems. I have studied <b>C++</b> and <b>HTML</b>, and I am
+    that solve real problems. I have studied <b>C++</b> and <abbr title="HyperText Markup Language">HTML</abbr>, and I am
     currently learning <i>Python</i> and <i>JavaScript</i> to broaden my
     development skills.</p>
     <p>My career goal is to become a <strong>Full-Stack Developer</strong> and
@@ -41,7 +87,19 @@
     Full-Stack Developer and contribute to meaningful technology
     projects.
 </p>
-    <h2 id="inspiration">What Inspires Me</h2>
+<p>
+    My favourite tag is &lt;main&gt;, because it tells the browser
+    where the important content is &amp; helps screen readers.
+</p>
+<h3>Hear my introduction</h3>
+
+<audio controls>
+    <source src="media/intro.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+</section>
+    <aside id="inspiration">
+    <h2>What Inspires Me</h2>
     <blockquote>
         “I am interested in the quiet moment when a difficult problem begins to make sense.”
     </blockquote>
@@ -56,18 +114,33 @@
     it is also about curiosity, responsibility and collaboration.</p>
     <p>My personal reminder is simple: <strong>stay curious, test your assumptions,
     and let consistent practice do its work.</strong></p>
+    <h3>A Talk That Inspires Me</h3>
 
-    <h2 id="skills">Skills and Interests</h2>
+<p>
+    This video shares useful ideas about learning,
+    personal growth and developing new skills.
+</p>
+<iframe
+    src="https://www.youtube.com/embed/J-swZaKN2Ic"
+    width="560"
+    height="315"
+    title="Carol Dweck: The Power of Believing That You Can Improve"
+    allowfullscreen>
+</iframe>
+</aside>
+
+    <section id="skills">
+    <h2>Skills and Interests</h2>
     <ul>
         <li>Programming Languages
-            <ul type="square">
+            <ul>
                 <li>C++ — studied</li>
                 <li>Python — currently learning</li>
                 <li>JavaScript — currently learning</li>
             </ul>
         </li>
         <li>Web Development
-            <ul type="circle">
+            <ul>
                 <li>HTML — studied</li>
                 <li>CSS — an area I plan to develop further</li>
             </ul>
@@ -81,6 +154,32 @@
             </ul>
         </li>
     </ul>
+    <h3>Skill Levels</h3>
+
+<p>
+    <label for="lvl-cpp">C++</label>
+    <meter id="lvl-cpp" value="0.6" min="0" max="1">60%</meter>
+</p>
+
+<p>
+    <label for="lvl-html">HTML</label>
+    <meter id="lvl-html" value="0.5" min="0" max="1">50%</meter>
+</p>
+
+<p>
+    <label for="lvl-python">Python</label>
+    <meter id="lvl-python" value="0.3" min="0" max="1">30%</meter>
+</p>
+
+<p>
+    <label for="lvl-js">JavaScript</label>
+    <meter id="lvl-js" value="0.2" min="0" max="1">20%</meter>
+</p>
+<h3>My Skill Chart</h3>
+
+<canvas id="skillChart" width="300" height="150">
+    A chart showing my skill levels
+</canvas>
     <p>
     I have experience with C++ and HTML, and I am currently
     developing my programming knowledge in Python and JavaScript.
@@ -102,39 +201,118 @@
     <p>I value consistent practice, curiosity and learning by building. I aim to
     strengthen my programming fundamentals while gradually developing the skills
     needed to create complete software applications.</p>
+</section>
 
-    <h2 id="projects">Projects</h2>
-    <h3>AASTU Parking Management System — Group Project</h3>
-    <img src="images/parking-system-running.jpg"
-         alt="Parking Management System running in the VS Code terminal, showing registration and administrator access"
-         width="600">
-    <p><small>Screenshot: the team project running in the terminal.</small></p>
-    <p>This team project was developed as part of our Fundamentals of Programming
-    work. It is a console-based parking management application written in C++.
-    The repository is organised into separate admin and customer source/header
-    files, shared utility files, a main program and an SQL schema.</p>
-    <p>The running screenshot shows the registration flow, first-user administrator
-    registration, login and the choice of standard or VIP membership. The
-    registration message also identifies administrator capabilities such as slot
-    lifecycle management, financial configuration, inventory categorisation and
-    monitoring.</p>
-    <p>Working on this project helped me understand how a larger program can be
-    divided into modules and how team members can contribute to a shared codebase.</p>
-    <p><a href="https://github.com/A-proG-spec/AASTU-FOP-project-Group-2">
-       View the AASTU FOP Group 2 repository</a></p>
-    <p><a href="projects.html">Read more about this project</a></p>
+    <section id="projects">
 
-    <h3>My First Program</h3>
-    <p>One Python statement I use when practising is
-    <code>print("Hello, World!")</code>. Here is a short example:</p>
-    <pre><code>for i in range(3):
+    <h2>Projects</h2>
+
+    <!-- CALCULATOR DEMONSTRATION -->
+
+    <article>
+        <h3>Calculator Demonstration</h3>
+
+        <p>
+            This is an instructor-provided demonstration included
+            as part of my Internet Programming I multimedia exercise.
+            It introduces basic calculator operations such as
+            addition, subtraction, multiplication and division.
+        </p>
+
+        <p>
+            <strong>Topic:</strong> Basic calculator operations
+        </p>
+
+        <p>
+            <a href="projects.html#calculator">
+                Watch the Calculator Demonstration
+            </a>
+        </p>
+    </article>
+
+
+    <!-- PARKING MANAGEMENT SYSTEM -->
+
+    <article>
+        <h3>AASTU Parking Management System — Group Project</h3>
+
+        <img src="images/parking-system-running.jpg"
+             alt="Parking Management System running in the terminal, showing registration and administrator access"
+             width="600">
+
+        <p>
+            <small>
+                Screenshot: the team project running in the terminal.
+            </small>
+        </p>
+
+        <p>
+            This team project was developed as part of our
+            Fundamentals of Programming work. It is a console-based
+            parking management application written in C++.
+            The repository is organised into separate admin and
+            customer source/header files, shared utility files,
+            a main program and an SQL schema.
+        </p>
+
+        <p>
+            The running screenshot shows the registration flow,
+            first-user administrator registration, login and the
+            choice of standard or VIP membership.
+        </p>
+
+        <p>
+            Working on this project helped me understand how a
+            larger program can be divided into modules and how
+            team members can contribute to a shared codebase.
+        </p>
+
+        <p>
+            <a href="https://github.com/A-proG-spec/AASTU-FOP-project-Group-2">
+                View the AASTU FOP Group 2 repository
+            </a>
+        </p>
+
+        <p>
+            <a href="projects.html#parking">
+                Read more about this project
+            </a>
+        </p>
+    </article>
+
+
+    <!-- FIRST PROGRAM -->
+
+    <article>
+        <h3>My First Program</h3>
+
+        <p>
+            One Python statement I use when practising is
+            <code>print("Hello, World!")</code>. Here is a short example:
+        </p>
+
+        <pre><code>for i in range(3):
     print("Hello", i)</code></pre>
+    </article>
 
-    <h2 id="education">Education</h2>
+</section>
+
+    <section id="education">
+    <h2>Education</h2>
     <h3>BSc in Software Engineering</h3>
-    <p>Addis Ababa Science and Technology University, 3rd year.</p>
+   <p>
+    Addis Ababa Science and Technology University,
+    <time datetime="2024-10">October 2024</time> – present.
+</p>
+    <h3>Degree Progress</h3>
+
+<p>
+    BSc in Software Engineering:
+    <progress value="50" max="100">50%</progress>
+    50% completed
+</p>
     <p><strong>Academic Record</strong> — The courses, grades and credit hours below are based on the academic information I provided.</p>
-    <table border="1" cellpadding="8" cellspacing="0">
+    <table>
         <caption>Academic Record — BSc in Software Engineering</caption>
         <thead><tr><th>Year</th><th>Semester</th><th>Course</th><th>Credit Hours</th><th>Grade</th></tr></thead>
         <tbody>
@@ -166,7 +344,7 @@
         <tfoot><tr><th colspan="3">Total completed credit hours</th><th>73</th><th></th></tr></tfoot>
     </table>
     <h3>Semester GPA and Cumulative GPA</h3>
-    <table border="1" cellpadding="8" cellspacing="0">
+   <table>
         <caption>GPA Summary</caption>
         <thead><tr><th>Academic Year</th><th>Semester</th><th>GPA</th><th>CGPA</th></tr></thead>
         <tbody>
@@ -184,18 +362,126 @@
     understand software development concepts, and build the
     confidence to solve technical problems.
 </p>
+</section>
 
-    <h2 id="contact">Contact</h2>
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <h3>Send Me a Message</h3>
+<p>Have a question or want to discuss a project? Fill out the form below.</p>
+<form action="thank-you.html" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Your Details</legend>
+
+        <p>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required>
+               </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+    </fieldset>
+    <fieldset>
+    <legend>Project Details</legend>
+
+    <p>
+        <label for="phone">Phone (optional):</label>
+        <input type="text" id="phone" name="phone"
+               pattern="0[79][0-9]{8}"
+               title="10 digits starting with 09 or 07">
+    </p>
+<p>Preferred contact method:</p>
+
+<input type="radio" id="by-email" name="contact-method" value="email" checked>
+<label for="by-email">Email</label>
+
+<input type="radio" id="by-phone" name="contact-method" value="phone">
+<label for="by-phone">Phone</label>
+<br><br>
+
+<label for="meeting">Preferred meeting date:</label>
+<input type="date" id="meeting" name="meeting" min="2026-11-01">
+<br><br>
+
+<label for="weeks">Project length (weeks):</label>
+<input type="number" id="weeks" name="weeks" min="1" max="52" step="1">
+<br><br>
+
+<label for="brief">Attach a project brief:</label>
+<input type="file" id="brief" name="brief">
+<br><br>
+
+<label for="colour">Preferred website colour:</label>
+<input type="color" id="colour" name="colour" value="#1f5fa8">
+<br><br>
+
+<label for="rating">How much do you like my portfolio? (1–10)</label>
+<input type="range" id="rating" name="rating" min="1" max="10" value="7">
+</fieldset>
+    <fieldset>
+    <legend>Your Message</legend>
+    <p>
+    <label for="reason">Reason for contacting me:</label>
+    <select id="reason" name="reason" required>
+        <option value="">Select a project type</option>
+        <optgroup label="Work">
+            <option value="internship">Internship offer</option>
+            <option value="freelance">Freelance project</option>
+            <option value="job">Full-time job</option>
+        </optgroup>
+
+        <optgroup label="Study">
+            <option value="group-project">Group project</option>
+            <option value="tutoring">Tutoring</option>
+        </optgroup>
+
+        <option value="other">Other</option>
+
+    </select>
+</p>
+<p>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+    <br>
+
+<input type="checkbox" id="copy" name="copy" value="yes">
+<label for="copy">Send me a copy of this message</label>
+<br><br>
+
+<label for="budget">Your budget (ETB):</label>
+<input type="number" id="budget" name="budget" min="1000" step="500">
+</p>
+</fieldset>
+<button type="submit">Send Message</button>
+<button type="reset">Clear</button>
+
+</form>
+<h3>Find My University</h3>
+
+<p>
+    Addis Ababa Science and Technology University (AASTU),
+    where I study Software Engineering.
+</p>
+<iframe
+    src="https://www.google.com/maps?q=Addis+Ababa+Science+and+Technology+University&output=embed"
+    width="600"
+    height="450"
+    title="Location of Addis Ababa Science and Technology University"
+    loading="lazy">
+</iframe>
     <p>Location: Addis Ababa, Ethiopia.</p>
     <p>Email: <a href="mailto:arjumatilahun@gmail.com">arjumatilahun@gmail.com</a></p>
-    <p>Phone: <a href="tel:+251917803119">+251 917 803 119</a></p>
+   <p>Phone: <a href="tel:+251917803119">+251&nbsp;917&nbsp;803&nbsp;119</a></p>
     <p>GitHub: <a href="https://github.com/arjumatilahun-hub">github.com/arjumatilahun-hub</a></p>
     <p>Team project: <a href="https://github.com/A-proG-spec/AASTU-FOP-project-Group-2">AASTU FOP Project — Group 2</a></p>
 
     <fieldset>
         <legend><strong>Connect with me</strong></legend>
         <p>I welcome opportunities to learn, collaborate and discuss software projects.</p>
-        <table cellpadding="10" cellspacing="0">
+       <table>
             <tr>
                 <td>
                     <strong>GitHub</strong><br>
@@ -230,7 +516,57 @@
     contact me through email for academic collaboration and
     software development discussions.
 </p>
+</section>
+</main>
+<footer>
     <p><a href="#top">Back to top</a></p>
-    <p>© 2026 Arjuma Tilahun Jalata. Student portfolio for Internet Programming I.</p>
+    <p>
+    Last updated:
+    <time datetime="2026-11-05">5 November 2026</time>
+</p>
+    <p>&copy; 2026 Arjuma Tilahun Jalata. Student portfolio for Internet Programming I.</p>
+    </footer>
+    <script>
+    const canvas = document.getElementById('logo');
+    const ctx = canvas.getContext('2d');
+
+    // Blue square background
+    ctx.fillStyle = "#1f5fa8";
+    ctx.fillRect(0, 0, 120, 120);
+
+    // White circle
+    ctx.beginPath();
+    ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+    ctx.fillStyle = "white";
+    ctx.fill();
+
+    // Your initials
+    ctx.fillStyle = "#1f5fa8";
+    ctx.font = "bold 36px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("AT", 60, 62);
+</script>
+<script>
+    const chart = document.getElementById('skillChart');
+    const chartCtx = chart.getContext('2d');
+
+    // Draw skill bars
+    chartCtx.fillStyle = "#1f5fa8";
+
+    chartCtx.fillRect(20, 72, 35, 48);
+    chartCtx.fillRect(90, 80, 35, 40);
+    chartCtx.fillRect(160, 96, 35, 24);
+    chartCtx.fillRect(230, 104, 35, 16);
+
+    // Add skill names
+    chartCtx.fillStyle = "black";
+    chartCtx.font = "12px Arial";
+
+    chartCtx.fillText("C++", 25, 140);
+    chartCtx.fillText("HTML", 90, 140);
+    chartCtx.fillText("Python", 155, 140);
+    chartCtx.fillText("JS", 240, 140);
+</script>
 </body>
 </html>
